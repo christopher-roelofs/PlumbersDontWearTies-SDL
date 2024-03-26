@@ -54,7 +54,7 @@ int main(int argc, char** args)
 
 	controller = nullptr;
 	controllerInstanceID = -1;
-	OpenFirstAvailableController();
+	//OpenFirstAvailableController();
 
 	// Initialize the game
 
@@ -154,7 +154,7 @@ int main(int argc, char** args)
 				}
 				case SDL_CONTROLLERDEVICEADDED:
 				{
-					OpenFirstAvailableController();
+					//OpenFirstAvailableController();
 					break;
 				}
 				case SDL_CONTROLLERDEVICEREMOVED:
@@ -167,7 +167,7 @@ int main(int argc, char** args)
 
 						Log::Print(LogTypes::Info, "Controller has been disconnected: instance ID %i", event.cdevice.which);
 
-						OpenFirstAvailableController();
+						//OpenFirstAvailableController();
 					}
 
 					break;
